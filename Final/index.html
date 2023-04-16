@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+
+  <title>About Me - Hunter Leake</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+  <div class="row">
+    <div class="col col-12">
+      <h1>Hunter Leake</h1>
+      <nav class="nav">
+        <a href="school.html">School</a>
+        <a href="wrestling.html">Wrestling</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="content">
+        <div class="text-box" style="text-align: center;">
+          A little bit about me...
+
+        </div>
+        <!-- Slideshow of dog pictures here -->
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+            <div class="numbertext">1 /5</div>
+            <img src="img/IowaState.JPG" style="width:350px;height: auto">
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">2 /5</div>
+            <img src="img/family.jpg" style="width:350px;height:auto">
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">3 /5</div>
+            <img src="img/WrestlerofWeek.jpg" style="width:350px;height:auto">
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">4 /5</div>
+            <img src="img/noE2.JPG" style="width:350px;height:auto">
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">5 /5</div>
+            <img src="img/E+A2.jpg" style= "width:350px;height:auto">
+          </div>
+
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <!--        <div style="text-align:center">-->
+        <!--          <span class="dot" onclick="currentSlide(1)"></span>-->
+        <!--          <span class="dot" onclick="currentSlide(2)"></span>-->
+        <!--          <span class="dot" onclick="currentSlide(3)"></span>-->
+        <!--          <span class="dot" onclick="currentSlide(4)"></span>-->
+        <!--          <span class="dot" onclick="currentSlide(5)"></span>-->
+        <!--        </div>-->
+
+        <script>
+          var slideIndex =1;showSlides(slideIndex);
+          function plusSlides(n){showSlides(slideIndex+=n)}
+          function currentSlide(n){showSlides(slideIndex=n)}
+          function showSlides(n){var i;var slides=document.getElementsByClassName("mySlides");var dots=document.getElementsByClassName("dot");if(n>slides.length){slideIndex=1}if(n<1){slideIndex=slides.length}for(i=0;i<slides.length;i++){slides[i].style.display ="none"}for(i=0;i<dots.length;i++){dots[i].className=dots[i].className.replace(" active","")}slides[slideIndex-1].style.display ="block";dots[slideIndex-1].className+=" active"}
+        </script>
+        <!--        <img src="img/APPA.JPG" alt = "Appa holidng a cloud" id = "imagesize" />-->
+        <div class="text-box" style="text-align: center;">
+          This is the right about me box
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
