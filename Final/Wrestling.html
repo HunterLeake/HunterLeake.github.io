@@ -1,10 +1,68 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+  <title>Wrestling - Hunter Leake</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-$END$
+<div class="container">
+  <div class="row">
+    <div class="col col-12">
+      <a style="color:#ecfe14";href="index.html" style="float: left;">&larr; Back</a>
+      <h1 style="color: #ecfe14;">Wrestling</h1>
+      <nav class="nav">
+        <a href="school.html">School</a>
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="content">
+        <div class="text-box">
+          This is the about wrestling text box
+        </div>
+        <!-- Slideshow of USA wrestling pictures here -->
+        <!-- Slideshow of dog pictures here -->
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+            <div class="numbertext">1 /5</div>
+            <img src="img/coachs.JPG" style="width:350px;height: auto">
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">2 /5</div>
+            <img src="img/HandraiseBig12.JPG" style="width:350px;height:auto">
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">3 /5</div>
+            <img src="img/WrestlerofWeek.jpg" style="width:350px;height:auto">
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">4 /5</div>
+            <img src="img/wrestlingBack.JPG" style="width:350px;height:auto">
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">5 /5</div>
+            <img src="img/wrestlingAirforce.JPG" style= "width:350px;height:auto">
+          </div>
+
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+      </div>
+      <script>
+        var slideIndex =1;showSlides(slideIndex);
+        function plusSlides(n){showSlides(slideIndex+=n)}
+        function currentSlide(n){showSlides(slideIndex=n)}
+        function showSlides(n){var i;var slides=document.getElementsByClassName("mySlides");var dots=document.getElementsByClassName("dot");if(n>slides.length){slideIndex=1}if(n<1){slideIndex=slides.length}for(i=0;i<slides.length;i++){slides[i].style.display ="none"}for(i=0;i<dots.length;i++){dots[i].className=dots[i].className.replace(" active","")}slides[slideIndex-1].style.display ="block";dots[slideIndex-1].className+=" active"}
+      </script>
+    </div>
+  </div>
+</div>
 </body>
 </html>
