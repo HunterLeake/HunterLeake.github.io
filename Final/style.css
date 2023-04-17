@@ -36,10 +36,13 @@ h1 {
 .content {
     display: flex;
 }
-.content .text-box {
+.content .text-box{
     flex: 1;
     color: white;
+    border-style: inset;
+    font-size: 18px;
 }
+
 
 * {box-sizing: border-box}
 .mySlides {display: none}
